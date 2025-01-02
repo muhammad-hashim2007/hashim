@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zanjabeel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Zanjabeel</h1>
+    </div>
+    <div class="login-btn">
+     <a href="index2.html" target="_blank"><button id="loginBtn">Login</button></a> 
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Welcome to the Best Online Book Store</h2>
+      <p>Explore a wide range of books for every interest.</p>
+      <button class="shop-btn">Shop Now</button>
+    </section>
+    <section class="book-section">
+      <h3>Popular Books</h3>
+      <button class="scroll-btn prev-btn">←</button>
+      <button class="scroll-btn next-btn">→</button>
+      <div class="scroll-container">
+        <div class="book-card">
+          <img src="images.jpeg" alt="Book 1">
+          <p class="book-title">IDEAS</p>
+          <p class="book-price">$13</p>
+        </div>
+        <div class="book-card">
+          <img src="14809769-L.jpg" alt="Book 2">
+          <p class="book-title">RICH DAD POOR DAD</p>
+          <p class="book-price">$10</p>
+        </div>
+        <div class="book-card">
+          <img src="22673665.jpg" alt="Book 3">
+          <p class="book-title">NAMAL</p>
+          <p class="book-price">$12</p>
+        </div>
+        <div class="book-card">
+          <img src="35388030.jpg" alt="Book 4">
+          <p class="book-title">HALIM</p>
+          <p class="book-price">$19</p>
+        </div>
+        <div class="book-card">
+          <img src="9632002.jpg" alt="Book 5">
+          <p class="book-title">RAJA GIDH</p>
+          <p class="book-price">$08</p>
+        </div>
+        <div class="book-card">
+          <img src="2.jpeg" alt="Book 6">
+          <p class="book-title">MALA</p>
+          <p class="book-price">$15</p>
+        </div>
+        <div class="book-card">
+          <img src="canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg" alt="Book 7">
+          <p class="book-title">SOUL</p>
+          <p class="book-price">$23</p>
+        </div>
+        <div class="book-card">
+          <img src="5781298e831e9d4d63933cd9fec8cc80.png" alt="Book 8">
+          <p class="book-title">TO THE FOREST</p>
+          <p class="book-price">$25</p>
+        </div>
+        <div class="book-card">
+          <img src="kindle-ebook-book-cover-path-in-forest-design-template-d89f870c1425191ef3a23a392f7f1fe7_screen.jpg" alt="Book 9">
+          <p class="book-title">UNDER THE PATH</p>
+          <p class="book-price">$17</p>
+        </div>
+      </div>
+    </section>
+    
+   
+  </main>
+<footer>
+  <section class="terms">
+
+    <div id="Privacy">
+      <h4>Privacy Policy</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae aliquid voluptates harum quia obcaecati temporibus id rem, esse fugit corporis in impedit cumque quam eaque placeat cupiditate, numquam doloribus excepturi!</p>
+    </div>
+    <div id="Terms">
+      <h4>Terms of Service</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum odio dicta natus modi commodi qui sed animi minus adipisci reiciendis, necessitatibus repellendus asperiores praesentium debitis atque molestias eveniet distinctio? Ducimus.</p>
+    </div>
+    <div id="Contact">
+      <h4>Contact Us</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti, iusto accusantium aperiam culpa sit fugit ratione earum autem excepturi temporibus eos quam. Tempora modi id expedita quae, accusantium possimus!</p>
+    </div>
+
+  </section>
+
+  <div class="footercontent">
+    <p>&copy; 2024 Zanjabeel. All rights reserved.</p>
+    <div class="footerlinks">
+      <a href="#Privacy">Privacy Policy</a>
+      <a href="#Terms">Terms of Service</a>
+      <a href="#Contact">Contact Us</a>
+    </div>
+  </div>
+ 
+</footer>
+
+
+
+<script>
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const scrollContainer = document.querySelector('.scroll-container');
+  const scrollAmount = document.querySelector('.book-card').offsetWidth + 20;
+
+  prevBtn.addEventListener('click', () => {
+    scrollContainer.scrollLeft -= scrollAmount * 4;
+  });
+
+  nextBtn.addEventListener('click', () => {
+    scrollContainer.scrollLeft += scrollAmount * 4; 
+  });
+</script>
+
+</body>
+</html>

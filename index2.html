@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  </head>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b0bed3;
+}
+
+.logincontainer {
+  background-color: rgb(209, 186, 186);
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #f7aaaa;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #3bc579;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3cbe37;
+}
+
+</style>
+  
+</head>
+<body>
+
+  <div class="logincontainer">
+    <h2>LOGIN</h2>
+    <form id="loginForm">
+      <label for="username">USERNAME:</label>
+      <input type="text" id="username" name="username">
+      
+      <label for="password">PASSWORD:</label>
+      <input type="password" id="password" name="password">
+
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-message" style="color: red;"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
